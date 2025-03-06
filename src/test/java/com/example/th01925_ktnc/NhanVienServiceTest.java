@@ -43,7 +43,7 @@ class NhanVienServiceTest {
     @Test
     void updateNhanVienEmptyPhongBan(){
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            nhanVienService.updateNhanVien(new NhanVien("TH01925","ManhHUng",19,50000.0f,2,""));
+            nhanVienService.updateNhanVien(new NhanVien("TH01925","ManhH",19,50000.0f,2,""));
         });
         assertEquals("phongBan is null or empty", exception.getMessage());
     }
